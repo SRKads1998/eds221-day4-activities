@@ -1,0 +1,44 @@
+---
+title: "Loops and Functions"
+format: html
+editor: visual
+---
+
+```{r}
+weekdays <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+transects<- c("transect A", "transect B", "transect C")
+
+for (i in seq_along(weekdays)) {
+  for (j in seq_along(transects)) {
+    transit <- i * j
+    print(paste0(weekdays[i], " - ", transects[j]))
+  }
+}
+```
+
+\
+
+```{r}
+force <- (mass, acceleration) {
+  Newtons = mass * acceleration
+  return(Newtons)
+}
+```
+
+```{r}
+fish_parms <- c(sci_name("Chanos chanos", "Sphyraena barracuda", "Caranx ignobilis"), common_name ("Milkfish", "Great barracuda", "Giant Trevally"), A_est(0.0905, 0.0181, 0.0353), B_est(2.52, 3.27, 3.05))
+```
+
+```{r}
+sci_name <- c("Chanos chanos", "Sphyraena barracuda", "Caranx ignobilis")
+common_name <- c("Milkfish", "Great barracuda", "Giant trevally")
+a_est <- c(0.0905, 0.0181, 0.0353)
+b_est <- c(2.52, 3.27, 3.05)
+fish_parms <-data.frame(c(sci_name, common_name,  a_est, b_est))
+
+fish_weight <- 
+```
+
+```{r}
+
+```
